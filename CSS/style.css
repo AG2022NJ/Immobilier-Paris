@@ -9,6 +9,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #eee;
+    color: #333;
 }
 
 p {
@@ -20,8 +22,30 @@ h1, h2, h3, h4 {
 }
 
 a {
-    color: #333;
+    color: #cf9a44;
     text-decoration: none;
+}
+strong {
+    color: #cf9a44;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* class */
+
+.container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* vp + header */
@@ -29,30 +53,106 @@ a {
 .vp-container {
    min-height: 100vh;
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
+   color: #cf9a44;
 }
 
 header {
     padding: 1rem 1rem;
-    background: #3e3e3e;
-    }
-
-header a{
+    background: #313030;
     color: #cf9a44;
-}
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    }
 
 .vp-logo {
     font-size: 1.8rem;
     margin-bottom: 0;
-
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 1rem;
     }
 
-.vp-logo img {
+header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
 
-        width: 8%;
+header ul li {
+    padding: 1rem;
+
+}
+
+header ul li a:hover {
+    background: #cf9a44;
+    color: black;
+}
+
+.vp-logo img {
+        width: 20%;
     }
 
 .vp {
-
     flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/frame.jpg) center center/cover;
+}
+
+.vp-content {
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+.vp-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.vp-content p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+/* offer */
+
+.offer {
+    padding: 10rem 1rem 10rem 1rem;
+
+}
+
+.offer-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.offer-elem {
+    border: 1px solid #ddd;
+    background: white;
+    margin: 1rem;
+    flex: 1;
+}
+
+.offer-elem-img {
+    width: 100%;
+}
+
+.offer-elem-text {
+    padding: 2rem;
+    text-align: center;
+}
+
+.offer-separator {
+    margin: 1rem auto;
+    height: 2px;
+    width: 50px;
+    background: #cf9a44;
 }
