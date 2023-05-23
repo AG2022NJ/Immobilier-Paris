@@ -48,6 +48,11 @@ ul {
     margin-bottom: 3rem;
 }
 
+.bg-dark {
+    background: #333;
+    color: white;
+}
+
 /* vp + header */
 
 .vp-container {
@@ -156,3 +161,36 @@ header ul li a:hover {
     width: 50px;
     background: #cf9a44;
 }
+
+/* who */
+
+.who {
+    flex-flow: row nowrap;
+    display: flex;
+}
+
+.who-content-img {
+    flex: 1;
+}
+.who-content-img img {
+    width: 100%;
+}
+
+.who-content-text {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    justify-content: center;
+    }
+
+.who-content-text p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    }
+
+.who-content-text h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    }
